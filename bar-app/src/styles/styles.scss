@@ -1,0 +1,70 @@
+@import 'mixins';
+@import 'variable';
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+p, h1, h2, h3, a {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    height: 88px;
+    background-color: var(--color-secondary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-bottom: var(--border-primary);
+    
+    .logo {
+        max-width: 133px;
+    }
+}
+
+.homePage {
+    height: 640px;
+    background: url(../assets/bg-homePage.png) no-repeat center, var(--color-secondary);
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-primary);
+    @include maxWidth();
+    
+    h1 {
+        font: {
+            family: var(--font-family-title);
+            size: 140px;
+        };
+        text-transform: uppercase;
+        line-height: 150%;
+    }
+
+    &__content {
+        display: flex;
+        width: 1320px;
+        justify-content: space-between;
+
+        p {
+            font: {
+                family: var(--font-family-primary);
+                size: var(--font-xbig);
+            };
+            max-width: 424px;
+            line-height: 150%;
+        }
+
+        button {
+            appearance: none;
+            @include button-primary;
+        }
+    }
+}

@@ -1,0 +1,15 @@
+@mixin button-primary () {
+    padding: 12px 38px;
+    font: {
+        family: var(--font-family-primary);
+        size: var(--font-xbig);
+    };
+    color: var(--color-primary);
+    background-color: var(--color-secondary);
+    border: var(--border-primary);
+    text-transform: uppercase;
+}
+
+@mixin maxWidth() {
+    max-width: 1920px;
+}

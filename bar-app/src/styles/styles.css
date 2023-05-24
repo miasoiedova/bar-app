@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
+:root {
+  --font-family-primary: Arial, Helvetica, sans-serif;
+  --font-family-title: "Oswald", sans-serif;
+  --font-xsmall: 12px;
+  --font-small: 14px;
+  --font-normal: 16px;
+  --font-big: 18px;
+  --font-xbig: 20px;
+  --color-primary: #FFFFFF;
+  --color-secondary: #151515;
+  --border-primary: 1px solid #FFFFFF;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+p, h1, h2, h3, a {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  height: 88px;
+  background-color: var(--color-secondary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: var(--border-primary);
+}
+header .logo {
+  max-width: 133px;
+}
+
+.homePage {
+  height: 640px;
+  background: url(../assets/bg-homePage.png) no-repeat center, var(--color-secondary);
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-primary);
+  max-width: 1920px;
+}
+.homePage h1 {
+  font-family: var(--font-family-title);
+  font-size: 140px;
+  text-transform: uppercase;
+  line-height: 150%;
+}
+.homePage__content {
+  display: flex;
+  width: 1320px;
+  justify-content: space-between;
+}
+.homePage__content p {
+  font-family: var(--font-family-primary);
+  font-size: var(--font-xbig);
+  max-width: 424px;
+  line-height: 150%;
+}
+.homePage__content button {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  padding: 12px 38px;
+  font-family: var(--font-family-primary);
+  font-size: var(--font-xbig);
+  color: var(--color-primary);
+  background-color: var(--color-secondary);
+  border: var(--border-primary);
+  text-transform: uppercase;
+}/*# sourceMappingURL=styles.css.map */
